@@ -52,7 +52,7 @@ func fetch() {
 			}
 		}
 	}
-	url := fmt.Sprintf("https://github.com/razshare/go-implicits/archive/refs/tags/%s.zip", version)
+	url := fmt.Sprintf("https://github.com/razshare/frizzante/archive/refs/tags/%s.zip", version)
 	if err := files.DownloadFile(url, fmt.Sprintf("frizzante-%s.zip", version)); err != nil {
 		messages.Fatal(err)
 	}
